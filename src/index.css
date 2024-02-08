@@ -1,0 +1,4 @@
+/* Estilos para la aplicacion completa */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

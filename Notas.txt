@@ -1,0 +1,26 @@
+Apuntes:
+    - Solo pude exister un solo elemento en el nivel mas alto de un componente. Por eso todo se engloba en un <div></div> o con "fragments" <></>
+    - 'rac' crear estructura de un componente 
+    - En el archivo "tailwind.config.css" existe la posibilidad de que el arreglo "content" venga como "purge". Eso significa que usa una version antigua de tailwind
+      se puedo sustituir por "content".
+    - {''}: sirve para dar un espacio en blanco (un "espacio" entre dos textos). Es lo mismo que usar el espacio en la palabra directa 
+    - Las extensions .JSX no son obligatorias en Next.js, Gastpy y demas. Pero, en Vite si
+    - Es posible crear tus propios Hooks en React 
+    - Cuando se usa un Hook como UseState, ese estado solo esta disponible en el componente donde se declaro, se puede pasar a otros componentes con otro Hook (Context?)
+    - &&: Este simblo se llama amperson
+    - Se puede crear una renderizacion condicional con un doble amperson (&&). Primero se indicia el booleano a evaluar, seguido del doble amperson y lo que se desea renderizar en caso de que el booleano sea true:
+      - {error && "Si hay un error"} : Si error es "true" se renderiza un texto con un mensaje de error
+    - Los props solo se pueden pasar de elemento padre a hijo no viceversa
+    - Si un state va a pasar por varios componentes es mejor colocarlo en el archivo principal (App.jsx)
+    - Pasar los valores de un componete principal (App.jsx) a un elemento hijo 
+    - Procurar siempre usar metodos inmutables al momento de trabajar con arreglos (No modificar el arreglo original, sino usar una copia del original)
+    - Ademas de los Props estan los "Children" que hacen uso de las etiquetas de inicio y cierre de un componente para englobar todos los elementos que estan contengas
+      y enviarlas directamente todos a la vez en lugar de usar clases individuales como CSS.
+    - Se usa una funcion de generacion de ID unico del lado del cliente, cuando se consumen datos de una base de datos si se puede usar el id como key de iteracion
+    - Una forma de pasar informacio a traves de los componentes de React es mediante props. No es muy recomendado ya que se usa una jerarquia muy larga. Por ejemplo:
+      - Se crea un State en el archivo principal (App.jsx) -> se pasa como prop a "Listado pacientes" ->  de ahi a "Paciente" y justo en ese lugar se modica el valor del State. Esto se arregla con context
+
+
+  Tailwind:
+    - h-screen overflow-y-scroll: Colocar scroll solo en un lado de la pantalla y mantener el otro elemento como estatico.
+    
